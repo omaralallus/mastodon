@@ -88,7 +88,7 @@ gem 'sidekiq-scheduler', '~> 5.0'
 gem 'sidekiq-unique-jobs', '~> 7.1'
 gem 'sidekiq-bulk', '~> 0.2.0'
 gem 'simple-navigation', '~> 4.4'
-gem 'simple_form', '~> 5.2'
+gem 'simple_form', '~> 5.3', '>= 5.3.1'
 gem 'stoplight', '~> 3.0.1'
 gem 'strong_migrations', '1.8.0'
 gem 'tty-prompt', '~> 0.23', require: false
@@ -141,7 +141,7 @@ group :test do
   gem 'simplecov-lcov', '~> 0.8', require: false
 
   # Stub web requests for specs
-  gem 'webmock', '~> 3.18'
+  gem 'webmock', '~> 3.23', '>= 3.23.1'
 end
 
 group :development do
