@@ -57,7 +57,7 @@ gem 'redis-namespace', '~> 1.10'
 gem 'htmlentities', '~> 4.3'
 gem 'http', '~> 5.1'
 gem 'http_accept_language', '~> 2.1'
-gem 'httplog', '~> 1.6.2'
+gem 'httplog', '~> 1.7.0'
 gem 'i18n', '1.14.1' # TODO: Remove version when resolved: https://github.com/glebm/i18n-tasks/issues/552 / https://github.com/ruby-i18n/i18n/pull/688
 gem 'idn-ruby', require: 'idn'
 gem 'inline_svg'
@@ -147,7 +147,7 @@ end
 group :development do
   # Code linting CLI and plugins
   gem 'rubocop', require: false
-  gem 'rubocop-capybara', require: false
+  gem 'rubocop-capybara', '>= 2.21.0', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
