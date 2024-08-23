@@ -119,7 +119,7 @@ group :test do
 
   # Browser integration testing
   gem 'capybara', '~> 3.39'
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', '>= 4.19.0'
 
   # Used to reset the database between system tests
   gem 'database_cleaner-active_record'
@@ -141,16 +141,16 @@ group :test do
   gem 'simplecov-lcov', '~> 0.8', require: false
 
   # Stub web requests for specs
-  gem 'webmock', '~> 3.18'
+  gem 'webmock', '~> 3.23', '>= 3.23.1'
 end
 
 group :development do
   # Code linting CLI and plugins
-  gem 'rubocop', require: false
-  gem 'rubocop-capybara', require: false
-  gem 'rubocop-performance', require: false
-  gem 'rubocop-rails', require: false
-  gem 'rubocop-rspec', require: false
+  gem 'rubocop', '>= 1.63.0', require: false
+  gem 'rubocop-capybara', '>= 2.21.0', require: false
+  gem 'rubocop-performance', '>= 1.21.0', require: false
+  gem 'rubocop-rails', '>= 2.25.0', require: false
+  gem 'rubocop-rspec', '>= 2.28.0', require: false
 
   # Annotates modules with schema
   gem 'annotate', '~> 3.2'
@@ -161,14 +161,14 @@ group :development do
 
   # Preview mail in the browser
   gem 'letter_opener', '~> 1.8'
-  gem 'letter_opener_web', '~> 2.0'
+  gem 'letter_opener_web', '~> 3.0', '>= 3.0.0'
 
   # Security analysis CLI tools
   gem 'brakeman', '~> 6.0', require: false
   gem 'bundler-audit', '~> 0.9', require: false
 
   # Linter CLI for HAML files
-  gem 'haml_lint', require: false
+  gem 'haml_lint', '>= 0.58.0', require: false
 
   # Validate missing i18n keys
   gem 'i18n-tasks', '~> 1.0', require: false
