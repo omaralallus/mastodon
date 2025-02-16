@@ -4,10 +4,10 @@ source 'https://rubygems.org'
 ruby '>= 3.0.0'
 
 gem 'puma', '~> 6.3'
-gem 'rails', '~> 7.1.1'
+gem 'rails', '~> 7.2.0'
 gem 'propshaft'
 gem 'thor', '~> 1.2'
-gem 'rack', '~> 2.2.7'
+gem 'rack', '~> 2.2.11'
 
 # For why irb is in the Gemfile, see: https://ruby.social/@st0012/111444685161478182
 gem 'irb', '~> 1.8'
@@ -148,8 +148,8 @@ group :development do
   # Code linting CLI and plugins
   gem 'rubocop', require: false
   gem 'rubocop-capybara', require: false
-  gem 'rubocop-performance', require: false
-  gem 'rubocop-rails', require: false
+  gem 'rubocop-performance', '>= 1.24.0', require: false
+  gem 'rubocop-rails', '>= 2.30.0', require: false
   gem 'rubocop-rspec', require: false
 
   # Annotates modules with schema
