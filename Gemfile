@@ -64,7 +64,7 @@ gem 'inline_svg'
 gem 'kaminari', '~> 1.2'
 gem 'link_header', '~> 0.0'
 gem 'mime-types', '~> 3.5.0', require: 'mime/types/columnar'
-gem 'nokogiri', '~> 1.15'
+gem 'nokogiri', '~> 1.18', '>= 1.18.3'
 gem 'nsa'
 gem 'oj', '~> 3.14'
 gem 'ox', '~> 2.14'
@@ -150,7 +150,7 @@ group :development do
   gem 'rubocop-capybara', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
-  gem 'rubocop-rspec', require: false
+  gem 'rubocop-rspec', '>= 3.5.0', require: false
 
   # Annotates modules with schema
   gem 'annotate', '~> 3.2'
@@ -171,7 +171,7 @@ group :development do
   gem 'haml_lint', require: false
 
   # Validate missing i18n keys
-  gem 'i18n-tasks', '~> 1.0', require: false
+  gem 'i18n-tasks', '~> 1.0', '>= 1.0.14', require: false
 end
 
 group :development, :test do
