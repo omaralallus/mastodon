@@ -7,7 +7,7 @@ gem 'puma', '~> 6.3'
 gem 'rails', '~> 7.1.1'
 gem 'propshaft'
 gem 'thor', '~> 1.2'
-gem 'rack', '~> 2.2.7'
+gem 'rack', '~> 2.2.13'
 
 # For why irb is in the Gemfile, see: https://ruby.social/@st0012/111444685161478182
 gem 'irb', '~> 1.8'
@@ -40,7 +40,7 @@ end
 gem 'net-ldap', '~> 0.18'
 
 gem 'omniauth-cas', '~> 3.0.0.beta.1'
-gem 'omniauth-saml', '~> 2.0'
+gem 'omniauth-saml', '~> 2.1', '>= 2.1.3'
 gem 'omniauth_openid_connect', '~> 0.6.1'
 gem 'omniauth', '~> 2.0'
 gem 'omniauth-rails_csrf_protection', '~> 1.0'
@@ -147,7 +147,7 @@ end
 group :development do
   # Code linting CLI and plugins
   gem 'rubocop', require: false
-  gem 'rubocop-capybara', require: false
+  gem 'rubocop-capybara', '>= 2.22.0', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
