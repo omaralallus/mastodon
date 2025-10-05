@@ -12,7 +12,7 @@ gem 'rack', '~> 2.2.7'
 # For why irb is in the Gemfile, see: https://ruby.social/@st0012/111444685161478182
 gem 'irb', '~> 1.8'
 
-gem 'haml-rails', '~>2.0'
+gem 'haml-rails', '~> 3.0', '>= 3.0.0'
 gem 'pg', '~> 1.5'
 gem 'pghero'
 gem 'dotenv-rails', '~> 2.8'
@@ -146,11 +146,11 @@ end
 
 group :development do
   # Code linting CLI and plugins
-  gem 'rubocop', require: false
-  gem 'rubocop-capybara', require: false
-  gem 'rubocop-performance', require: false
-  gem 'rubocop-rails', require: false
-  gem 'rubocop-rspec', require: false
+  gem 'rubocop', '>= 1.66.0', require: false
+  gem 'rubocop-capybara', '>= 2.21.0', require: false
+  gem 'rubocop-performance', '>= 1.21.0', require: false
+  gem 'rubocop-rails', '>= 2.25.0', require: false
+  gem 'rubocop-rspec', '>= 2.28.0', require: false
 
   # Annotates modules with schema
   gem 'annotate', '~> 3.2'
@@ -168,7 +168,7 @@ group :development do
   gem 'bundler-audit', '~> 0.9', require: false
 
   # Linter CLI for HAML files
-  gem 'haml_lint', require: false
+  gem 'haml_lint', '>= 0.58.0', require: false
 
   # Validate missing i18n keys
   gem 'i18n-tasks', '~> 1.0', require: false
